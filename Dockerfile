@@ -1,7 +1,7 @@
 FROM centos:latest
 RUN yum -y update && \
     yum -y install epel-release && \
-    yum --enablerepo=epel install redis ntopng hiredis-devel && \
+    yum --enablerepo=epel install redis ntopng hiredis-devel \
 
 EXPOSE 3000
 
